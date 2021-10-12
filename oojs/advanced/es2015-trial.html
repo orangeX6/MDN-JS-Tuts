@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Constructor</title>
+</head>
+
+<body>
+
+    <script>
+        // Basic class 
+        class Person {
+            constructor(first, last, age, gender, interests) {
+                this.name = {
+                    first,
+                    last
+                };
+                this.age = age;
+                this.gender = gender;
+                this.interests = interests;
+            }
+
+            greeting() {
+                alert('Hi yo, this is ' + this.name.first);
+            }
+
+            farewell() {
+                alert(`Byee boo ` + this.name.last + ` is going to ${this.interests[0]}`)
+            }
+
+
+        }
+
+        class Gamer extends Person {
+            constructor(first, last, age, gender, interests, games) {
+                super(first, last, age, gender, interests);
+                this.games = games;
+            }
+        }
+
+        let Pranav = new Gamer('Pranav', 'Orange', 25, 'male', ['play', 'drink'], 'league of legends');
+    </script>
+</body>
+
+</html>
