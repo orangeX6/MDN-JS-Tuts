@@ -100,19 +100,19 @@ EvilCircle.prototype.draw = function () {
 
 EvilCircle.prototype.checkBounds = function () {
   if ((this.x + this.size) > width + 1) {
-    this.x = this.width - this.size;
+    this.x = width - this.size;
   }
 
   if ((this.x - this.size) < -1) {
-    this.x = this.size;
+    this.x += this.size;
   }
 
   if ((this.y + this.size) > height + 1) {
-    this.y = this.height - this.y
+    this.y -= this.size;
   }
 
   if ((this.y - this.size) < -1) {
-    this.y = this.size;
+    this.y += this.size;
   }
 }
 
