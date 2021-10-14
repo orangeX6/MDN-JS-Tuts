@@ -1,7 +1,7 @@
 /* || general styles */
 
 html {
-  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
 }
 
 body {
@@ -9,8 +9,9 @@ body {
   margin: 0 auto;
 }
 
-h1, h2 {
-  font-family: 'Faster One', cursive;
+h1,
+h2 {
+  font-family: "Faster One", cursive;
 }
 
 /* header styles */
@@ -28,9 +29,14 @@ header p {
 
 /* section styles */
 
+section {
+  display: flex;
+}
+
 section article {
-  width: 33%;
+  /* width: 33%;
   float: left;
+  */
 }
 
 section p {
